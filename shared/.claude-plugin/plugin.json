@@ -1,0 +1,6 @@
+{
+  "name": "workflow-skills",
+  "description": "Generic workflow skills: plan, why, handoff, summarize, assumptions, lint, design-algorithm, systems-engineer.",
+  "version": "1.0.0",
+  "author": { "name": "Corey Lowe" }
+}

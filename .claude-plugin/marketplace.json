@@ -1,0 +1,12 @@
+{
+  "name": "corey-skills",
+  "owner": { "name": "Corey Lowe" },
+  "description": "Generic workflow skills for Claude: plan, why, handoff, summarize and more.",
+  "plugins": [
+    {
+      "name": "workflow-skills",
+      "source": "./shared",
+      "description": "Generic workflow skills: plan, why, handoff, summarize, assumptions, lint, design-algorithm, systems-engineer."
+    }
+  ]
+}
