@@ -2,7 +2,7 @@
 
 Generic Claude skills that work in any Claude account. One folder per skill, each with a `SKILL.md`.
 
-**Keep personal skills out of this repo.** Anything with personal finances, journals, or home details lives in the separate `claude-skills-personal` folder, which is never cloned onto a work machine.
+**Keep personal skills out of this repo.** This repo is public. Any skill with personal context lives in a separate local folder and never goes on GitHub.
 
 ## What's here
 
