@@ -39,14 +39,17 @@ Uploaded skills are private to your account. Re-run the script and upload again 
 
 ### B. Plugin in Claude Code or Cowork (one-command updates)
 
-On the work machine, in a Claude Code session:
+This repo is public on purpose: it only holds generic skills, so the work machine needs no GitHub login. In a terminal on the work machine (Claude Code v2.1.292 or later):
 
 ```
-/plugin marketplace add YOUR-GITHUB-USERNAME/claude-skills
-/plugin install workflow-skills@corey-skills
+claude plugin install workflow-skills --marketplace coreylowe12/claude-skills
 ```
 
-This needs git access to the private repo from that machine. Check your employer's policy before putting personal GitHub credentials on a work computer. After editing a skill, bump `version` in `shared/.claude-plugin/plugin.json`, otherwise installs keep the cached copy.
+On older versions, run `/plugin install workflow-skills --marketplace coreylowe12/claude-skills` inside a Claude Code session instead. Restart Claude Code afterward. The skills appear with the plugin name as a prefix, for example `/workflow-skills:why`.
+
+To keep it current: in Claude Code run `/plugin`, open **Marketplaces**, pick `corey-skills` and choose **Enable auto-update**. After editing a skill here, bump `version` in `shared/.claude-plugin/plugin.json`, otherwise installs keep the cached copy. If your company restricts which plugin sources Claude Code can add, this install may be blocked; use option A instead.
+
+Cowork and the Claude website do not get plugins installed this way; use option A there.
 
 ### C. Org-wide (only if you want teammates to have them)
 
